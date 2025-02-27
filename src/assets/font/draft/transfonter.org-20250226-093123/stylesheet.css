@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'PROXON';
+    src: url('PROXONRegular.woff2') format('woff2'),
+        url('PROXONRegular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
