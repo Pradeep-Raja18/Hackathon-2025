@@ -3,7 +3,6 @@ import Homepage from './Pages/Homepage'
 import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router-dom";
 
 function App() {
-  
   return (
     <HashRouter>
     <Routes>

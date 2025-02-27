@@ -42,7 +42,7 @@
   --secondary-font:'VTF Justina GEO';
 }
 body{
-  background-color: #5813a7;
+  background-color: #20043b;
 }
 *{
   margin: 0;
@@ -120,6 +120,7 @@ header{
   text-align: center;
   font-family: var(--secondary-font);
   padding:10px 0px 40px;
+  background-color: #5813a7;
 }
 .header-border-style {
   position: absolute;
@@ -236,4 +237,133 @@ nav .svg-content {
 .register-btn .svg-content {
   transform: translateY(-58%);
 }
+
+.slider {
+  padding-top: 10px;
+  background-color: #e7e7e730;
+}
+
+/* About Us */
+.about {
+  position: relative;
+  padding: 50px 0px;
+}
+.about-wrapper{
+  position: relative;
+  z-index: 2;
+}
+.about:before{
+  content: '';
+  background-color: #B026FF;
+  width: 30%;
+  height: 50%;
+  position: absolute;
+  top: 40%;
+  filter: blur(300px);
+  z-index: 1;
+}
+.about:after{
+  content: '';
+  background-color: #B026FF;
+  width: 50%;
+  height: 50%;
+  position: absolute;
+  bottom: 40%;
+  right: 20%;
+  filter: blur(200px);
+  z-index: 1;
+}
+.effect {
+  position: absolute;
+  top: 7%;
+}
+.about-wrapper .left-about,.about-wrapper .right-about {
+  flex: 1;
+}
+.about-wrapper {
+  display: flex;
+}
+.yt-box iframe {
+  width: 100%;
+  height: 500px;
+}
+.yt-box {
+  max-width: 550px;
+  height: 380px;
+  margin: 0 auto;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.about-stats{
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 22px;
+  color: #fff;
+  padding-left: 60px;
+}
+.counter-text {
+  font-size: 40px;
+  margin-bottom: 10px;
+  text-shadow:0px 0px 5px #fff;
+}
+.total-stats {
+  display: flex;
+  gap: 40px;
+  margin-top: 30px;
+}
+.participation .counter-text {
+  font-size: 62px !important;
+
+}
+.left-about {
+  display: flex;
+  align-items: center;
+}
+.participation {
+  margin-bottom: 50px;
+}
+
+/* Footer */
+
+footer {
+  background-image: linear-gradient(45deg, #ffffff0a, #00000045);
+}
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  padding:20px 0px;
+}
+.copyright-detail {
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.6px;
+  color:#fff;
+}
+.footer-menu ul {
+  display: flex;
+}
+.footer-menu ul li{
+  list-style:none;
+  border-left: 2px solid #fff;
+}
+.footer-menu ul li a{
+  font-family: var(--primary-font);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23.6px;
+  color:#fff;
+  text-decoration:none;
+  padding:0px 20px;
+}
+.footer-menu ul li:first-child{
+  padding:0px 20px;
+  border-left: none;
+}
+.footer-menu ul li:last-child a{
+  padding:0px 0px 0px 20px;
+  border-left: none;
+}
+
 

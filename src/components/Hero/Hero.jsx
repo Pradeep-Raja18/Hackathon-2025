@@ -4,6 +4,7 @@ import singularityNET from "../../assets/Images/singularityNET.png"
 import Hackindia from "../../assets/Images/hackindia.png"
 import HeroVideo from './HeroVideo/HeroVideo'
 import Navbar from './Navbar/Navbar'
+import CountUp from "react-countup";
 
 
 const Hero = () => {
@@ -36,13 +37,13 @@ const Hero = () => {
 
                 <div className="hero-stats">
                     <div className="price-pool stats-box">
-                        <h4><span className="orange-text">$150+ </span>Price Pool</h4>
+                        <h4><span className="orange-text">$<CountUp start={100} end={150} duration={2.5}/>+ </span>Price Pool</h4>
                     </div>
                     <div className="university stats-box">
-                        <h4><span className="orange-text">150+ </span>University</h4>
+                        <h4><span className="orange-text"><CountUp start={100} end={150} duration={2.5}/>+ </span>University</h4>
                     </div>
                     <div className="students stats-box">
-                        <h4><span className="orange-text">25,000+ </span>Students</h4>
+                        <h4><span className="orange-text"><CountUp start={2000} end={25000} duration={2.5}/>+ </span>Students</h4>
                     </div>
                 </div>
 
