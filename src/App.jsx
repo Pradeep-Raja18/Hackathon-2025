@@ -5,7 +5,7 @@ import { BrowserRouter as Router, Routes, Route, HashRouter } from "react-router
 function App() {
   
   return (
-    <HashRouter basename='/Hackathon-2025'>
+    <HashRouter>
     <Routes>
       <Route path="/" element={<Homepage />} />
     </Routes>
