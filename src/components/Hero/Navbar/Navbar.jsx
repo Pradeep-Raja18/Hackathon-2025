@@ -32,7 +32,7 @@ const Navbar = () => {
                         </svg>
                 </div>
                 <div className={`menu-wrapper ${isOpen ? "open" : ""}`}>
-                    <div className="close">
+                    <div className="close" onClick={handleClick}>
                         X
                     </div>
                 <ul>
