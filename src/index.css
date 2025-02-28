@@ -43,6 +43,7 @@
 }
 body{
   background-color: #20043b;
+  scroll-behavior: smooth;
 }
 *{
   margin: 0;
@@ -61,6 +62,9 @@ video{
   max-width: 1400px;
   padding: 0px 30px;
   margin: 0 auto;
+}
+.dcodeblock-page{
+  overflow: hidden;
 }
 
 
@@ -239,8 +243,10 @@ nav .svg-content {
 }
 
 .slider {
+  position: relative;
+  z-index: 5;
   padding-top: 10px;
-  background-color: #e7e7e730;
+  background-color: #ffffff;
 }
 
 /* About Us */
@@ -253,23 +259,23 @@ nav .svg-content {
   z-index: 2;
 }
 .about:before{
-  content: '';
-  background-color: #B026FF;
+  content: "";
+  background-color: #b026ff;
   width: 30%;
   height: 50%;
   position: absolute;
-  top: 40%;
+  top: 0;
   filter: blur(300px);
   z-index: 1;
 }
 .about:after{
-  content: '';
-  background-color: #B026FF;
+  content: "";
+  background-color: #b026ff;
   width: 50%;
   height: 50%;
   position: absolute;
-  bottom: 40%;
-  right: 20%;
+  bottom: -10%;
+  right: -20%;
   filter: blur(200px);
   z-index: 1;
 }
@@ -328,6 +334,8 @@ nav .svg-content {
 
 footer {
   background-image: linear-gradient(45deg, #ffffff0a, #00000045);
+  position: relative;
+  z-index: 2;
 }
 .footer-inner {
   display: flex;
@@ -365,5 +373,160 @@ footer {
   padding:0px 0px 0px 20px;
   border-left: none;
 }
+@media (max-width:1200px){
+  nav{
+    display: none;
+  }
+  .video-container {
+    width: 200%;
+    height: 200%;
+  }
+}
 
 
+@media (max-width:991px){
+    .container{
+      padding: 0px 10px;
+    }
+    /* Hader */
+    .logo {
+        max-width: 150px;
+    }
+    .header-inner .svg-button {
+        transform: scale(0.8) translateX(10px);
+    }
+    /* Hero */
+    .video-container {
+        width: 200%;
+        height: 200%;
+    }
+    .singualarity-net {
+        max-width: 300px;
+    }
+    .hackindia {
+        max-width: 600px;
+    }
+    .hero-tagline h2 {
+        font-size: 20px;
+        margin-top: 0px;
+    }
+    .hero-btn {
+        font-size: 14px;
+        line-height: normal;
+        margin: 20px 0px 40px;
+    }
+    .hero-stats .stats-box {
+        flex: none;
+    }
+    .hero-stats .stats-box .orange-text {
+        display: block;
+    }
+    .stats-box h4 {
+        font-size: 20px;
+    }
+    .svg-button.register-btn {
+        transform: scale(0.8);
+    }
+    /* About */
+    .about-wrapper {
+      flex-direction: column;
+    }
+    .left-about {
+        text-align: center;
+    }
+    .about-stats {
+        width: 100%;
+        padding: 0px 0px 40px 0px;
+    }
+    .total-stats {
+        justify-content: space-evenly;
+        max-width: 700px;
+        margin: 0 auto;
+    }
+    .stats-box {
+        flex: 1;
+    }
+
+    /* Footer */
+    .footer-inner {
+        flex-direction: column-reverse;
+        gap: 30px;
+        align-items: center;
+        padding: 30px 0px;
+    }
+    .copyright-detail{
+      font-size: 14px;
+      line-height: normal;
+    }
+    .footer-menu ul li,.footer-menu ul li:first-child,.footer-menu ul li:last-child  {
+        padding: 0px 20px;
+    }
+    .footer-menu ul li a ,.footer-menu ul li:last-child a{
+        padding: 0px;
+        font-size: 14px;
+        line-height: normal;
+    }
+    
+}
+
+@media (max-width:550px){
+  /* Header */
+  .header-inner {
+    height: 40px;
+  }
+  .logo {
+      max-width: 120px;
+  }
+  .header-inner .svg-button {
+    transform: scale(0.5) translateX(60px);
+  }
+  /* Hero */
+  .singualarity-net {
+      max-width: 40%;
+  }
+  .hackindia {
+      max-width: 80%;
+      margin-top: 20px;
+  }
+  .hero-tagline h2 {
+      font-size: 16px;
+  }
+  .hero-btn {
+      font-size: 12px;
+      margin: 20px 0px 30px;
+  }
+  .hero-stats .stats-box {
+      flex: 1;
+  }
+  .university.stats-box {
+      margin: 0px;
+      padding: 0px;
+      border: none;
+  }
+  .stats-box h4 {
+      font-size: 19px;
+  }
+  .svg-button.register-btn {
+      margin-top: 20px;
+  }
+  /* About us */
+  .about-stats {
+      font-size: 16px;
+  }
+  .counter-text {
+      font-size: 32px;
+  }
+  /* Footer */
+  .copyright-detail{
+    font-size: 12px;
+    line-height: normal;
+  }
+  .footer-menu ul li,.footer-menu ul li:first-child,.footer-menu ul li:last-child  {
+      padding: 0px 10px;
+  }
+  .footer-menu ul li a ,.footer-menu ul li:last-child a{
+      padding: 0px;
+      font-size: 12px;
+      line-height: normal;
+  }
+}

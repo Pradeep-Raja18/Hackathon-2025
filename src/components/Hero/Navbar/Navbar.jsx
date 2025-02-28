@@ -1,10 +1,16 @@
 import React from 'react'
+import NavLogo from '../../../assets/Images/hackindia-nav.png'
 import { Link } from "react-router-dom";
 
 const Navbar = () => {
   return (
     <div className="nav-bar">
         <div className="container">
+            <div className="nav-logo">
+                <span className='nav-img'>
+                    <img src={NavLogo} alt="Hackindia" width="40px"/>
+                </span>
+            </div>
             <nav>
             <ul>
                 <li>
