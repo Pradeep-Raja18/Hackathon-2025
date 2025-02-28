@@ -3,7 +3,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const SliderBox = ({ slides, slidesToShow = 1.3 }) => {
+const SliderBox = ({ slides, slidesToShow}) => {
     const settings = {
         infinite: true,
         speed: 20000,
@@ -20,7 +20,11 @@ const SliderBox = ({ slides, slidesToShow = 1.3 }) => {
         <div className="slider">
             <Slider {...settings}>
                 {slides.map((slide, index) => (
-                    <img key={index} src={slide.image} alt={`slide-${index + 1}`} />
+                    <div className="slider-box">
+                      <div className="img-box">
+                      <img key={index} src={slide.image} alt={`slide-${index + 1}`} />
+                    </div>
+                    </div>
                 ))}
             </Slider>
         </div>
